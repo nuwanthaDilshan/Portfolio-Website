@@ -5,6 +5,7 @@ import AboutPage from "./about";
 import ProjectsPage from "./projects";
 import ServicesPage from "./services";
 import ContactPage from "./contact";
+import ErrorPage from "./errorPage";
 
 export default function HomePage() {
     return (
@@ -17,6 +18,7 @@ export default function HomePage() {
             <Route path="/projects" element={<ProjectsPage />}></Route>
             <Route path="/services" element={<ServicesPage />}></Route>
             <Route path="/contact" element={<ContactPage />}></Route>
+            <Route path="/*" element={<ErrorPage />}></Route>
           </Routes>
         </div>
       </>
