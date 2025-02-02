@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <header>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 font-semibold ${
+        className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 font-[Times_New_Roman] ${
           isScrolled ? "bg-[#040c16] shadow-lg" : "bg-transparent"
         }`}
       >
@@ -32,7 +32,9 @@ export default function Header() {
           {/* Logo */}
           <NavLink to="/" className="flex items-center">
             <img src="/logo.png" className="w-10 h-10 mr-2" alt="Logo" />
-            <h1 className="text-white text-3xl uppercase">Nuwantha</h1>
+            <h1 className="text-white text-3xl capitalize font-[Monotype_Corsiva]">
+              Nuwantha
+            </h1>
           </NavLink>
 
           {/* Hamburger Icon for Mobile */}

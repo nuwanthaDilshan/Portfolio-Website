@@ -10,7 +10,7 @@ export default function HomePage() {
     return (
       <>
         <Navbar />
-        <div className="h-screen w-full bg-[#062139] ">
+        <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman]">
           <Routes path="/*">
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
