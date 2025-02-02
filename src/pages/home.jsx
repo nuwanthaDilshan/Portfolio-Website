@@ -1,5 +1,4 @@
 import MouseBall from "../components/mouseBall";
-import AboutPage from "./about";
 
 
 export default function Home() {
