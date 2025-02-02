@@ -32,14 +32,14 @@ export default function Header() {
 
           <div className="text-center text-white text-[16px] uppercase flex gap-4 absolute right-35 ">
             <Link to="/">Home</Link>
-            <Link to="#">About Me</Link>
-            <Link to="#">Projects</Link>
-            <Link to="#">Services</Link>
-            <Link to="#">Contact</Link>
+            <Link to="/about">About Me</Link>
+            <Link to="/projects">Projects</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/contact">Contact</Link>
           </div>
 
           <Link
-            to="#"
+            to="/contact"
             className="uppercase bg-[#0788ff] border-1 border-[#0788ff] text-white px-4 py-2 rounded-full hover:border-white hover:bg-black relative"
           >
             Let's Talk
