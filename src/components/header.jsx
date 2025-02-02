@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
+        className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 font-semibold ${
           isScrolled ? "bg-[#040c16] shadow-lg" : "bg-transparent"
         }`}
       >
