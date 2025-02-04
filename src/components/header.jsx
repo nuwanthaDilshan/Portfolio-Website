@@ -5,10 +5,30 @@ import { FiMenu, FiX } from "react-icons/fi";
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState("home");
 
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
+
+            // Determine the active section based on scroll position
+            const sections = [
+                "home",
+                "about",
+                "projects",
+                "services",
+                "contact",
+            ];
+            for (const section of sections) {
+                const element = document.getElementById(section);
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 100 && rect.bottom >= 100) {
+                        setActiveSection(section);
+                        break;
+                    }
+                }
+            }
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -17,8 +37,16 @@ export default function Header() {
         };
     }, []);
 
-    const handleNavClick = () => {
-        setMenuOpen(false);
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+    const handleNavClick = (id) => {
+        setMenuOpen(false); // Close the menu if open
+        scrollToSection(id); // Scroll to the specified section
     };
 
     return (
@@ -35,6 +63,7 @@ export default function Header() {
                             src="/logo.png"
                             className="w-10 h-10 mr-2"
                             alt="Logo"
+                            onClick={() => handleNavClick("home")}
                         />
                         <h1 className="text-white text-3xl capitalize font-[Monotype_Corsiva]">
                             Nuwantha
@@ -59,12 +88,12 @@ export default function Header() {
                             to="/"
                             className={({ isActive }) =>
                                 `relative text-white block py-2 px-4 ${
-                                    isActive
+                                    activeSection === "home"
                                         ? "text-[#0788ff] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-[#0788ff] md:after:transition-all md:after:duration-1000"
                                         : "md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-0 md:after:h-[3px] md:after:bg-transparent"
                                 }`
                             }
-                            onClick={handleNavClick}
+                            onClick={() => handleNavClick("home")}
                         >
                             Home
                         </NavLink>
@@ -73,12 +102,12 @@ export default function Header() {
                             to="/about"
                             className={({ isActive }) =>
                                 `relative text-white block py-2 px-4 ${
-                                    isActive
+                                    activeSection === "about"
                                         ? "text-[#0788ff] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-[#0788ff] md:after:transition-all md:after:duration-1000"
                                         : "md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-0 md:after:h-[3px] md:after:bg-transparent"
                                 }`
                             }
-                            onClick={handleNavClick}
+                            onClick={() => handleNavClick("about")}
                         >
                             About Me
                         </NavLink>
@@ -87,12 +116,12 @@ export default function Header() {
                             to="/projects"
                             className={({ isActive }) =>
                                 `relative text-white block py-2 px-4 ${
-                                    isActive
+                                    activeSection === "projects"
                                         ? "text-[#0788ff] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-[#0788ff] md:after:transition-all md:after:duration-1000"
                                         : "md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-0 md:after:h-[3px] md:after:bg-transparent"
                                 }`
                             }
-                            onClick={handleNavClick}
+                            onClick={() => handleNavClick("projects")}
                         >
                             Projects
                         </NavLink>
@@ -101,12 +130,12 @@ export default function Header() {
                             to="/services"
                             className={({ isActive }) =>
                                 `relative text-white block py-2 px-4 ${
-                                    isActive
+                                    activeSection === "services"
                                         ? "text-[#0788ff] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-[#0788ff] md:after:transition-all md:after:duration-1000"
                                         : "md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-0 md:after:h-[3px] md:after:bg-transparent"
                                 }`
                             }
-                            onClick={handleNavClick}
+                            onClick={() => handleNavClick("services")}
                         >
                             Services
                         </NavLink>
@@ -115,12 +144,12 @@ export default function Header() {
                             to="/contact"
                             className={({ isActive }) =>
                                 `relative text-white block py-2 px-4 ${
-                                    isActive
+                                    activeSection === "contact"
                                         ? "text-[#0788ff] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-[#0788ff] md:after:transition-all md:after:duration-1000"
                                         : "md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-0 md:after:h-[3px] md:after:bg-transparent"
                                 }`
                             }
-                            onClick={handleNavClick}
+                            onClick={() => handleNavClick("contact")}
                         >
                             Contact
                         </NavLink>
@@ -130,6 +159,7 @@ export default function Header() {
                     <Link
                         to="/contact"
                         className="hidden md:block uppercase bg-[#0788ff] border-1 border-[#0788ff] text-white px-4 py-2 rounded-full hover:border-white hover:bg-black"
+                        onClick={() => handleNavClick("contact")}
                     >
                         Let's Talk
                     </Link>

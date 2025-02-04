@@ -12,14 +12,44 @@ export default function HomePage() {
         <>
             <Navbar />
             <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman]">
-                <Routes path="/*">
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<AboutPage />} />
-                    <Route path="/projects" element={<ProjectsPage />}></Route>
-                    <Route path="/services" element={<ServicesPage />}></Route>
-                    <Route path="/contact" element={<ContactPage />}></Route>
-                    <Route path="/*" element={<ErrorPage />}></Route>
-                </Routes>
+                <section
+                    id="home"
+                    className="h-screen flex items-center justify-center"
+                >
+                    <Home />
+                </section>
+            </div>
+            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman]">
+                <section
+                    id="about"
+                    className="h-screen flex items-center justify-center"
+                >
+                    <AboutPage />
+                </section>
+            </div>
+            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman]">
+                <section
+                    id="projects"
+                    className="h-screen flex items-center justify-center"
+                >
+                    <ProjectsPage />
+                </section>
+            </div>
+            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman]">
+                <section
+                    id="services"
+                    className="h-screen flex items-center justify-center"
+                >
+                    <ServicesPage />
+                </section>
+            </div>
+            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman]">
+                <section
+                    id="contact"
+                    className="h-screen flex items-center justify-center"
+                >
+                    <ContactPage />
+                </section>
             </div>
         </>
     );
