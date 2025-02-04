@@ -65,7 +65,10 @@ export default function Header() {
                             alt="Logo"
                             onClick={() => handleNavClick("home")}
                         />
-                        <h1 className="text-white text-3xl capitalize font-[Monotype_Corsiva]">
+                        <h1
+                            className="text-white text-3xl capitalize font-[Monotype_Corsiva]"
+                            onClick={() => handleNavClick("home")}
+                        >
                             Nuwantha
                         </h1>
                     </NavLink>
@@ -82,7 +85,7 @@ export default function Header() {
                     <div
                         className={`${
                             menuOpen ? "block" : "hidden"
-                        } md:flex text-white text-base md:text-lg uppercase gap-4 absolute md:relative right-0 top-14 md:top-auto md:right-auto md:flex-row md:items-center bg-[#040c16] md:bg-transparent w-full md:w-auto`}
+                        } md:flex text-[13px] text-white text-base uppercase gap-4 absolute md:relative right-1 top-14 md:top-auto md:right-auto md:flex-row md:items-center bg-[#040c16] md:bg-transparent w-full md:w-auto`}
                     >
                         <NavLink
                             to="/"
@@ -153,16 +156,15 @@ export default function Header() {
                         >
                             Contact
                         </NavLink>
+                        {/* Let's Talk Button */}
+                        <Link
+                            to="/contact"
+                            className="hidden md:block uppercase bg-[#0788ff] border-1 border-[#0788ff] text-white px-4 py-2 rounded-full hover:border-white hover:bg-black md:ml-[40px]"
+                            onClick={() => handleNavClick("contact")}
+                        >
+                            Let's Talk
+                        </Link>
                     </div>
-
-                    {/* Let's Talk Button */}
-                    <Link
-                        to="/contact"
-                        className="hidden md:block uppercase bg-[#0788ff] border-1 border-[#0788ff] text-white px-4 py-2 rounded-full hover:border-white hover:bg-black"
-                        onClick={() => handleNavClick("contact")}
-                    >
-                        Let's Talk
-                    </Link>
                 </div>
             </nav>
         </header>
