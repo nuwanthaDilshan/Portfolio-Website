@@ -23,7 +23,7 @@ export default function Header() {
                 const element = document.getElementById(section);
                 if (element) {
                     const rect = element.getBoundingClientRect();
-                    if (rect.top <= 100 && rect.bottom >= 100) {
+                    if (rect.top <= 400 && rect.bottom >= 400) {
                         setActiveSection(section);
                         break;
                     }
