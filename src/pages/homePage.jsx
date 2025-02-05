@@ -5,7 +5,6 @@ import AboutPage from "./about";
 import ProjectsPage from "./projects";
 import ServicesPage from "./services";
 import ContactPage from "./contact";
-import ErrorPage from "./errorPage";
 
 export default function HomePage() {
     return (

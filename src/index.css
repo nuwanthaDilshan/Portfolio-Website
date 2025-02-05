@@ -9,3 +9,23 @@
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
+
+@keyframes typewriter {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 49vw;
+  }
+50% {
+    width: 0;
+  }
+}
+
+.animate-typewriter {
+  display: inline-block;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(20) forwards;
+}
