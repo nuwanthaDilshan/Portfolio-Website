@@ -63,7 +63,7 @@ export default function Home() {
                             <div className="container mx-auto flex justify-center md:justify-start items-center">
                                 <Link
                                     to="/contact"
-                                    className="bg-[#0788ff] border-1 border-[#0788ff] text-white px-4 py-2 rounded-full hover:border-white hover:bg-black uppercase mt-6 mr-15 flex items-center gap-2"
+                                    className="bg-[#0788ff] border-1 border-[#0788ff] text-white px-4 py-2 rounded-full hover:border-white hover:bg-black uppercase mt-6 mr-8 md:mr-15 flex items-center gap-2"
                                     onClick={(e) => {
                                         e.preventDefault(); // Prevent the default link behavior (page refresh)
                                         const contactSection =
@@ -83,7 +83,7 @@ export default function Home() {
                                     <Link
                                         to="#"
                                         className="absolute rounded-full border-2 border-white bg-blue-500 p-2 hover:mb-1"
-                                        style={{ left: "-2.0rem" }} // Adjust this value to control the gap
+                                        style={{ left: "-1.5rem" }} // Adjust this value to control the gap
                                     >
                                         <FaFacebookF className="text-white text-2xl" />
                                     </Link>
@@ -92,7 +92,7 @@ export default function Home() {
                                     <Link
                                         to="#"
                                         className="absolute rounded-full border-2 border-white bg-blue-400 p-2 hover:mb-1"
-                                        style={{ left: "2.0rem" }} // Adjust this value to control the gap
+                                        style={{ left: "1.5rem" }} // Adjust this value to control the gap
                                     >
                                         <FaLinkedinIn className="text-white text-2xl" />
                                     </Link>
