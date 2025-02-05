@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import MouseBall from "../components/mouseBall";
+import { Link } from "react-router-dom";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function Home() {
     const [currentText, setCurrentText] = useState("software engineer");
     const [isTyping, setIsTyping] = useState(true);
 
-    const texts = [
-        "software engineer",
-        "full stack developer",
-    ];
+    const texts = ["software engineer", "full stack developer"];
 
     let currentIndex = 0; // Initialize index to start at the first text
 
@@ -25,7 +25,6 @@ export default function Home() {
 
         return () => clearInterval(interval); // Cleanup interval on component unmount
     }, []);
-
 
     return (
         <>
@@ -55,12 +54,50 @@ export default function Home() {
                             </h1>
 
                             <p className="text-base md:text-xl">
-                                I’m a software engineer and full-stack
-                                developer with expertise in web technologies. I
-                                build scalable, efficient, and user-friendly web
+                                I’m a software engineer and full-stack developer
+                                with expertise in web technologies. I build
+                                scalable, efficient, and user-friendly web
                                 applications, focusing on both front-end and
                                 back-end development.
                             </p>
+                            <div className="container mx-auto flex justify-center md:justify-start items-center">
+                                <Link
+                                    to="/contact"
+                                    className="bg-[#0788ff] border-1 border-[#0788ff] text-white px-4 py-2 rounded-full hover:border-white hover:bg-black uppercase mt-6 mr-15 flex items-center gap-2"
+                                    onClick={(e) => {
+                                        e.preventDefault(); // Prevent the default link behavior (page refresh)
+                                        const contactSection =
+                                            document.getElementById("contact");
+                                        if (contactSection) {
+                                            contactSection.scrollIntoView({
+                                                behavior: "smooth",
+                                            }); // Scroll smoothly to the contact section
+                                        }
+                                    }}
+                                >
+                                    Get in touch
+                                    <IoIosArrowRoundForward className="text-2xl" />
+                                </Link>
+                                <div className="ml-4 flex items-center justify-center pt-6 gap-4 relative">
+                                    {/* Facebook Link */}
+                                    <Link
+                                        to="#"
+                                        className="absolute rounded-full border-2 border-white bg-blue-500 p-2 hover:mb-1"
+                                        style={{ left: "-2.0rem" }} // Adjust this value to control the gap
+                                    >
+                                        <FaFacebookF className="text-white text-2xl" />
+                                    </Link>
+
+                                    {/* LinkedIn Link */}
+                                    <Link
+                                        to="#"
+                                        className="absolute rounded-full border-2 border-white bg-blue-400 p-2 hover:mb-1"
+                                        style={{ left: "2.0rem" }} // Adjust this value to control the gap
+                                    >
+                                        <FaLinkedinIn className="text-white text-2xl" />
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
                         {/* Right Side Section */}
                         <div className="mt-8 md:mt-0">
