@@ -3,6 +3,7 @@ import MouseBall from "../components/mouseBall";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import FirstSectionBottomBar from "../components/firstSectionBottomBar";
 
 export default function Home() {
     const [currentText, setCurrentText] = useState("software engineer");
@@ -107,10 +108,9 @@ export default function Home() {
                                 className="w-full max-w-md mx-auto md:max-w-full"
                             />
                         </div>
+                        <FirstSectionBottomBar />
                     </div>
                 </section>
-                {/* Full-Width Red Bar at Bottom */}
-                <div className="absolute left-0 bottom-0 w-full h-[150px] bg-red-500"></div>
             </div>
         </>
     );
