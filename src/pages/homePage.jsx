@@ -5,7 +5,6 @@ import AboutPage from "./about";
 import ProjectsPage from "./projects";
 import ServicesPage from "./services";
 import ContactPage from "./contact";
-import FirstSectionBottomBar from "../components/firstSectionBottomBar";
 
 export default function HomePage() {
     return (
