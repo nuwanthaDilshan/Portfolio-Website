@@ -48,7 +48,7 @@ export default function ProjectsPage() {
                             onMouseUp={handleMouseUp}
                             onMouseLeave={handleMouseUp}
                         >
-                            <div className="flex pt-7 gap-5 min-w-fit">
+                            <div className="flex pt-7 gap-5 min-w-fit select-none">
                                 <div className="w-[400px] h-auto bg-white rounded-[7px] p-4 relative cursor-default group overflow-hidden">
                                     {/* Image with Hover Zoom, Blur, and Rounded Corners */}
                                     <div className="relative overflow-hidden rounded-[7px] group-hover:rounded-[7px] transition-all duration-500">
