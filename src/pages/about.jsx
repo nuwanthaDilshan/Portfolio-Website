@@ -32,7 +32,7 @@ export default function AboutPage() {
                                 adventure.
                             </p>
                             <div>
-                                <button className="bg-blue-500 text-white font-semibold px-8 py-3 rounded-xl hover:bg-black hover:border-1 transition-all">
+                                <button className="border border-blue-500 bg-blue-500 text-white font-semibold px-8 py-3 rounded-xl hover:bg-black hover:border-white transition-all">
                                     Learn More
                                 </button>
                             </div>
