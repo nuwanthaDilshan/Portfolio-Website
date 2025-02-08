@@ -5,7 +5,6 @@ import AboutPage from "./about";
 import ProjectsPage from "./projects";
 import ServicesPage from "./services";
 import ContactPage from "./contact";
-import FirstSectionBottomBar from "../components/firstSectionBottomBar";
 
 export default function HomePage() {
     return (
@@ -27,7 +26,7 @@ export default function HomePage() {
                     <AboutPage />
                 </section>
             </div>
-            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman] md:pt-0">
+            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman] md:pt-0 pt-80">
                 <section
                     id="projects"
                     className="h-screen flex items-center justify-center"
