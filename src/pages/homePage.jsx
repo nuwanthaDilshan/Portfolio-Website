@@ -5,20 +5,21 @@ import AboutPage from "./about";
 import ProjectsPage from "./projects";
 import ServicesPage from "./services";
 import ContactPage from "./contact";
+import FirstSectionBottomBar from "../components/firstSectionBottomBar";
 
 export default function HomePage() {
     return (
         <>
             <Navbar />
-            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman]">
+            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman] pt-45 md:pt-0">
                 <section
                     id="home"
-                    className="h-screen flex items-center justify-center"
+                    className="h-full flex items-center justify-center"
                 >
                     <Home />
                 </section>
             </div>
-            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman]">
+            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman] md:pt-0 pt-40">
                 <section
                     id="about"
                     className="h-screen flex items-center justify-center"
@@ -26,7 +27,7 @@ export default function HomePage() {
                     <AboutPage />
                 </section>
             </div>
-            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman]">
+            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman] md:pt-0">
                 <section
                     id="projects"
                     className="h-screen flex items-center justify-center"

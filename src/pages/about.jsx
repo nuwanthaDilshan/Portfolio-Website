@@ -4,13 +4,41 @@ export default function AboutPage() {
     return (
         <>
             <MouseBall />
-            <div className="bg-[#062239] min-h-screen">
-                <main className="pt-60 md:pt-18 p-3 max-w-7xl mx-auto text-gray-700">
-                    <section id="about">
-                        About Section
-                    </section>
-                </main>
-            </div>
+                <section id="about" className="w-full h-full">
+                    <div className="container mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-gray-100">
+                        {/* Left Side Section */}
+                        <div className="w-full flex justify-center md:p-35">
+                            <img
+                                src="/about-banner.jpg"
+                                alt="About Us Banner"
+                                className="rounded-[36px] w-full max-w-md md:max-w-lg lg:max-w-xl object-cover"
+                            />
+                        </div>
+
+                        {/* Right Side Section */}
+                        <div className="space-y-6 text-center md:text-left">
+                            <h2 className="text-4xl font-bold text-[#ffa15d]">
+                                Welcome to Our Journey
+                            </h2>
+                            <p className="text-gray-200 text-lg leading-relaxed">
+                                Discover who we are, what we stand for, and how
+                                we are shaping the future with innovative
+                                solutions and creative ideas.
+                            </p>
+                            <p className="text-gray-300 leading-relaxed">
+                                Our commitment to excellence drives us to
+                                deliver products and services that make a
+                                difference. Join us on this incredible
+                                adventure.
+                            </p>
+                            <div>
+                                <button className="bg-[#ffa15d] text-[#062239] font-semibold px-8 py-3 rounded-xl hover:bg-[#ef7924] transition-all">
+                                    Learn More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
         </>
     );
 }

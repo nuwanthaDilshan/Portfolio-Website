@@ -4,11 +4,15 @@ export default function ProjectsPage() {
     return (
         <>
             <MouseBall />
-            <div className="bg-[#062239] min-h-screen">
-                <main className="pt-18 p-3 max-w-7xl mx-auto text-gray-700">
-                    <section id="projects">Projects Section</section>
-                </main>
-            </div>
+            <section id="projects" className="w-full h-full pt-10 text-white">
+                <div className="bg-[#072d4f] w-full h-full px-4">
+                    <div className="p-20">
+                        <p className="uppercase bg-[#224564] inline-block px-2 rounded-[3px]">
+                            my work
+                        </p>
+                    </div>
+                </div>
+            </section>
         </>
     );
 }
