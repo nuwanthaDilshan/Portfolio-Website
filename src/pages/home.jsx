@@ -35,10 +35,10 @@ export default function Home() {
                       {/* Left Side Section */}
                       <div className="text-center md:text-left p-5">
                           <p className="bg-[#224564] inline-block px-2 rounded-[3px]">
-                              Nuwantha Dilshan Subasinghe
+                              You full Name
                           </p>
                           <h1 className="text-3xl md:text-5xl font-bold mb-2 uppercase">
-                              Hi! I'm Nuwantha.
+                              Hi! I'm First Name.
                           </h1>
                           <h1 className="text-[#0788ff] text-3xl md:text-5xl font-bold mb-2 uppercase flex items-center">
                               <span className="mr-2 md:mr-3">I'm</span>

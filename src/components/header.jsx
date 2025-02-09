@@ -69,7 +69,7 @@ export default function Header() {
                             className="text-white text-3xl capitalize font-[Monotype_Corsiva]"
                             onClick={() => handleNavClick("home")}
                         >
-                            Nuwantha
+                            First Name
                         </h1>
                     </NavLink>
 
