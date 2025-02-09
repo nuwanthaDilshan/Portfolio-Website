@@ -7,7 +7,39 @@ import FirstSectionBottomBar from "../components/firstSectionBottomBar";
 
 export default function Home() {
   const [currentText, setCurrentText] = useState("software engineer");
-  const [isTyping, setIsTyping] = useState(true);
+    const [isTyping, setIsTyping] = useState(true);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+            for (const section of sections) {
+                const element = document.getElementById("contact");
+                if (element) {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top <= 400 && rect.bottom >= 400) {
+                        setActiveSection(section);
+                        break;
+                    }
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+    const handleNavClick = (id) => {
+        scrollToSection(id); // Scroll to the specified section
+    };
 
   const texts = ["software engineer", "full stack developer"];
   let currentIndex = 0;
@@ -63,6 +95,7 @@ export default function Home() {
                               <Link
                                   to="/contact"
                                   className="bg-[#0788ff] text-white px-4 py-2 rounded-full hover:bg-black mt-6 mr-8 flex items-center gap-2"
+                                  onClick={() => handleNavClick("contact")}
                               >
                                   Get in touch
                                   <IoIosArrowRoundForward className="text-2xl" />
