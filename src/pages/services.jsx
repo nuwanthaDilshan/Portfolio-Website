@@ -14,179 +14,119 @@ export default function ServicesPage() {
                         <span className="text-[#0788ff]">services</span> I am
                         providing
                     </h1>
-                    <div className="flex mt-7 gap-5">
-                        <div className="w-[300px] h-[400px] relative group overflow-hidden rounded-[6px] shadow-lg">
-                            {/* Image */}
+
+                    {/* Responsive Grid Layout */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-7">
+                        {/* Service Card 1 */}
+                        <div className="w-full h-[400px] relative group overflow-hidden rounded-[6px] shadow-lg">
                             <img
                                 src="/web-development-service.jpg"
                                 alt="Web Development Services"
                                 className="w-full h-full object-cover rounded-[6px]"
                             />
-
-                            {/* Darker gradient overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/100 via-black/75 to-black/20 rounded-[6px]"></div>
-
-                            {/* Content */}
                             <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
-                                {/* Title */}
                                 <h2 className="text-[20px] font-bold mb-2">
                                     Web Development Services
                                 </h2>
-
-                                {/* Description */}
                                 <p className="text-[14px] leading-relaxed opacity-90">
-                                    As a web developer, I provide a wide range
-                                    of web development services to help
-                                    businesses and individuals bring their ideas
-                                    to life on the internet. Whether you need a
-                                    custom website, a responsive design, or a
-                                    complex web application, I have the skills
-                                    and expertise to deliver exceptional
-                                    results.
+                                    I provide a wide range of web development
+                                    services to bring your ideas to life. From
+                                    custom websites to complex applications, I
+                                    deliver results.
                                 </p>
-
-                                {/* Horizontal rule */}
                                 <hr className="my-3 opacity-30" />
-
-                                {/* Rating */}
                                 <div className="flex items-center gap-2">
-                                    {/* Star rating */}
                                     <span className="text-[16px] text-yellow-400">
                                         ★★★★⯨
                                     </span>
-                                    {/* Rating value */}
                                     <span className="text-[14px] opacity-90">
                                         (4.7)
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[300px] h-[400px] relative group overflow-hidden rounded-[6px] shadow-lg">
-                            {/* Image */}
+
+                        {/* Service Card 2 */}
+                        <div className="w-full h-[400px] relative group overflow-hidden rounded-[6px] shadow-lg">
                             <img
                                 src="/website-design-services.jpg"
                                 alt="Web Development Services"
                                 className="w-full h-full object-cover rounded-[6px]"
                             />
-
-                            {/* Darker gradient overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/100 via-black/75 to-black/20 rounded-[6px]"></div>
-
-                            {/* Content */}
                             <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
-                                {/* Title */}
                                 <h2 className="text-[20px] font-bold mb-2">
                                     Web Designing Services
                                 </h2>
-
-                                {/* Description */}
                                 <p className="text-[14px] leading-relaxed opacity-90">
-                                    As a web designer, I specialize in creating
-                                    visually appealing and user-friendly web
-                                    interfaces. Whether you need a simple
-                                    website or a complex web application, I have
-                                    the skills and experience to bring your
-                                    vision to life.
+                                    I specialize in creating visually appealing
+                                    and user-friendly web interfaces for a
+                                    variety of applications.
                                 </p>
-
-                                {/* Horizontal rule */}
                                 <hr className="my-3 opacity-30" />
-
-                                {/* Rating */}
                                 <div className="flex items-center gap-2">
-                                    {/* Star rating */}
                                     <span className="text-[16px] text-yellow-400">
                                         ★★★★⯨
                                     </span>
-                                    {/* Rating value */}
                                     <span className="text-[14px] opacity-90">
                                         (4.5)
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[300px] h-[400px] relative group overflow-hidden rounded-[6px] shadow-lg">
-                            {/* Image */}
+
+                        {/* Service Card 3 */}
+                        <div className="w-full h-[400px] relative group overflow-hidden rounded-[6px] shadow-lg">
                             <img
                                 src="/seo.jpg"
-                                alt="Web Development Services"
+                                alt="SEO Services"
                                 className="w-full h-full object-cover rounded-[6px]"
                             />
-
-                            {/* Darker gradient overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/100 via-black/75 to-black/20 rounded-[6px]"></div>
-
-                            {/* Content */}
                             <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
-                                {/* Title */}
                                 <h2 className="text-[20px] font-bold mb-2">
                                     SEO Services
                                 </h2>
-
-                                {/* Description */}
                                 <p className="text-[14px] leading-relaxed opacity-90">
-                                    As a SEO expert, I optimize websites to
-                                    improve their visibility and ranking in
-                                    search engine results. Whether you need
-                                    basic SEO services or advanced SEO
-                                    strategies, I have the skills and expertise
-                                    to help you reach your goals.
+                                    I help improve website visibility and search
+                                    engine rankings with tailored SEO
+                                    strategies.
                                 </p>
-
-                                {/* Horizontal rule */}
                                 <hr className="my-3 opacity-30" />
-
-                                {/* Rating */}
                                 <div className="flex items-center gap-2">
-                                    {/* Star rating */}
                                     <span className="text-[16px] text-yellow-400">
                                         ★★★⯨☆
                                     </span>
-                                    {/* Rating value */}
                                     <span className="text-[14px] opacity-90">
                                         (3.5)
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[300px] h-[400px] relative group overflow-hidden rounded-[6px] shadow-lg">
-                            {/* Image */}
+
+                        {/* Service Card 4 */}
+                        <div className="w-full h-[400px] relative group overflow-hidden rounded-[6px] shadow-lg">
                             <img
                                 src="/Graphic-Designing.jpg"
-                                alt="Web Development Services"
+                                alt="Graphic Designing Services"
                                 className="w-full h-full object-cover rounded-[6px]"
                             />
-
-                            {/* Darker gradient overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/100 via-black/75 to-black/20 rounded-[6px]"></div>
-
-                            {/* Content */}
                             <div className="absolute inset-0 flex flex-col justify-end p-5 text-white">
-                                {/* Title */}
                                 <h2 className="text-[20px] font-bold mb-2">
                                     Graphic Designing Services
                                 </h2>
-
-                                {/* Description */}
                                 <p className="text-[14px] leading-relaxed opacity-90">
-                                    As a graphic designer, I create visually
-                                    appealing and effective designs for
-                                    websites, applications, and other digital
-                                    media. Whether you need a simple logo or a
-                                    complex design, I have the skills and
-                                    expertise to bring your ideas to life.
+                                    I craft visually appealing designs for
+                                    websites and digital media, bringing your
+                                    ideas to life.
                                 </p>
-
-                                {/* Horizontal rule */}
                                 <hr className="my-3 opacity-30" />
-
-                                {/* Rating */}
                                 <div className="flex items-center gap-2">
-                                    {/* Star rating */}
                                     <span className="text-[16px] text-yellow-400">
                                         ★★★☆☆
                                     </span>
-                                    {/* Rating value */}
                                     <span className="text-[14px] opacity-90">
                                         (3.0)
                                     </span>

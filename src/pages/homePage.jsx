@@ -34,7 +34,7 @@ export default function HomePage() {
                     <ProjectsPage />
                 </section>
             </div>
-            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman]">
+            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman] md:pt-0 pt-80">
                 <section
                     id="services"
                     className="h-screen flex items-center justify-center"
@@ -42,7 +42,7 @@ export default function HomePage() {
                     <ServicesPage />
                 </section>
             </div>
-            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman]">
+            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman] md:pt-0 pt-80">
                 <section
                     id="contact"
                     className="h-screen flex items-center justify-center"
