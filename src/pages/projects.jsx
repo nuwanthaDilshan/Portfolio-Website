@@ -44,7 +44,7 @@ export default function ProjectsPage() {
                         {/* Scrollable Section */}
                         <div
                             ref={scrollContainerRef}
-                            className="flex gap-5 pt-7 overflow-x-auto cursor-grab scrollbar-hide"
+                            className="flex gap-5 mt-7 overflow-x-auto cursor-grab scrollbar-hide"
                             onMouseDown={handleMouseDown}
                             onMouseMove={handleMouseMove}
                             onMouseUp={handleMouseUpOrLeave}
@@ -56,7 +56,7 @@ export default function ProjectsPage() {
                                     className="w-[300px] sm:w-[350px] flex-shrink-0 bg-white rounded-[7px] p-4 relative cursor-default group overflow-hidden select-none"
                                 >
                                     {/* Image with Hover Zoom, Blur, and Rounded Corners */}
-                                    <div className="relative overflow-hidden rounded-[7px] group-hover:rounded-[7px] transition-all duration-500">
+                                    <div className="relative overflow-hidden rounded-[7px] group-hover:rounded-[7px] transition-all duration-500 cursor-pointer">
                                         <img
                                             src={`/project${project}.jpg`}
                                             alt=""
