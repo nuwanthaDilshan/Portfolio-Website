@@ -5,6 +5,8 @@ import AboutPage from "./about";
 import ProjectsPage from "./projects";
 import ServicesPage from "./services";
 import ContactPage from "./contact";
+import TestimonialPage from "./testimonial";
+import Footer from "../components/footer";
 
 export default function HomePage() {
     return (
@@ -15,7 +17,7 @@ export default function HomePage() {
             <div className="w-full bg-[#062139] font-[Times_New_Roman]">
                 <section
                     id="home"
-                    className="min-h-[90vh] flex items-center justify-center py-10"
+                    className="min-h-[90vh] flex items-center justify-center py-5"
                 >
                     <Home />
                 </section>
@@ -25,7 +27,7 @@ export default function HomePage() {
             <div className="w-full bg-[#062139] font-[Times_New_Roman]">
                 <section
                     id="about"
-                    className="min-h-[90vh] flex items-center justify-center py-10"
+                    className="min-h-[90vh] flex items-center justify-center py-5"
                 >
                     <AboutPage />
                 </section>
@@ -35,7 +37,7 @@ export default function HomePage() {
             <div className="w-full bg-[#062139] font-[Times_New_Roman]">
                 <section
                     id="projects"
-                    className="min-h-[90vh] flex items-center justify-center py-10"
+                    className="min-h-[90vh] flex items-center justify-center py-5"
                 >
                     <ProjectsPage />
                 </section>
@@ -45,9 +47,17 @@ export default function HomePage() {
             <div className="w-full bg-[#062139] font-[Times_New_Roman]">
                 <section
                     id="services"
-                    className="min-h-[90vh] flex items-center justify-center py-10"
+                    className="min-h-[90vh] flex items-center justify-center py-5"
                 >
                     <ServicesPage />
+                </section>
+            </div>
+            <div className="w-full bg-[#062139] font-[Times_New_Roman]">
+                <section
+                    id="services"
+                    className="min-h-[90vh] flex items-center justify-center py-5"
+                >
+                    <TestimonialPage/>
                 </section>
             </div>
 
@@ -55,11 +65,12 @@ export default function HomePage() {
             <div className="w-full bg-[#062139] font-[Times_New_Roman]">
                 <section
                     id="contact"
-                    className="min-h-[90vh] flex items-center justify-center py-10"
+                    className="min-h-[90vh] flex items-center justify-center"
                 >
                     <ContactPage />
                 </section>
             </div>
+            <Footer/>
         </>
     );
 }
