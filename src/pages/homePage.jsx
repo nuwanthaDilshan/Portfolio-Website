@@ -10,42 +10,52 @@ export default function HomePage() {
     return (
         <>
             <Navbar />
-            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman] pt-45 md:pt-0">
+
+            {/* Home Section */}
+            <div className="w-full bg-[#062139] font-[Times_New_Roman]">
                 <section
                     id="home"
-                    className="h-full flex items-center justify-center"
+                    className="min-h-[90vh] flex items-center justify-center py-10"
                 >
                     <Home />
                 </section>
             </div>
-            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman] md:pt-0 pt-40">
+
+            {/* About Section */}
+            <div className="w-full bg-[#062139] font-[Times_New_Roman]">
                 <section
                     id="about"
-                    className="h-screen flex items-center justify-center"
+                    className="min-h-[90vh] flex items-center justify-center py-10"
                 >
                     <AboutPage />
                 </section>
             </div>
-            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman] md:pt-0 pt-80">
+
+            {/* Projects Section */}
+            <div className="w-full bg-[#062139] font-[Times_New_Roman]">
                 <section
                     id="projects"
-                    className="h-screen flex items-center justify-center"
+                    className="min-h-[90vh] flex items-center justify-center py-10"
                 >
                     <ProjectsPage />
                 </section>
             </div>
-            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman] md:pt-0 pt-80">
+
+            {/* Services Section */}
+            <div className="w-full bg-[#062139] font-[Times_New_Roman]">
                 <section
                     id="services"
-                    className="h-screen flex items-center justify-center"
+                    className="min-h-[90vh] flex items-center justify-center py-10"
                 >
                     <ServicesPage />
                 </section>
             </div>
-            <div className="h-screen w-full bg-[#062139] font-[Times_New_Roman] md:pt-0 pt-80">
+
+            {/* Contact Section */}
+            <div className="w-full bg-[#062139] font-[Times_New_Roman]">
                 <section
                     id="contact"
-                    className="h-screen flex items-center justify-center"
+                    className="min-h-[90vh] flex items-center justify-center py-10"
                 >
                     <ContactPage />
                 </section>
