@@ -11,16 +11,11 @@ export default function Home() {
 
     const texts = ["software engineer", "full stack developer"];
     let currentIndex = 0;
-
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({ behavior: "smooth" });
         }
-    };
-
-    const handleNavClick = (id) => {
-        scrollToSection(id); // Scroll to the specified section
     };
 
     useEffect(() => {
@@ -74,7 +69,7 @@ export default function Home() {
                                 <Link
                                     to="/contact"
                                     className="bg-[#0788ff] text-white px-6 py-3 rounded-full hover:bg-black flex items-center gap-2"
-                                    onClick={() => handleNavClick("contact")}
+                                    onClick={() => scrollToSection("contact")}
                                 >
                                     Get in touch
                                     <IoIosArrowRoundForward className="text-2xl" />

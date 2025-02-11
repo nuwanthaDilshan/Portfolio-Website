@@ -55,7 +55,7 @@ export default function TestimonialSection() {
                         key={index}
                         className={`cursor-pointer text-xs ${
                             index === currentIndex
-                                ? "text-blue-500"
+                                ? "text-blue-500 scale-150 duration-700"
                                 : "text-gray-500"
                         }`}
                         onClick={() => setCurrentIndex(index)}
