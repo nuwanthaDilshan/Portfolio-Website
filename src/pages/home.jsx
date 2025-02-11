@@ -12,27 +12,6 @@ export default function Home() {
     const texts = ["software engineer", "full stack developer"];
     let currentIndex = 0;
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-            for (const section of sections) {
-                const element = document.getElementById("contact");
-                if (element) {
-                    const rect = element.getBoundingClientRect();
-                    if (rect.top <= 400 && rect.bottom >= 400) {
-                        setActiveSection(section);
-                        break;
-                    }
-                }
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         if (element) {
