@@ -38,8 +38,6 @@ export default function ContactPage() {
 
   return (
     <>
-      <MouseBall />
-      <>
         <MouseBall />
         <section id="contact" className="w-full h-full p-5 md:p-10 text-white">
           <div className="p-6 md:p-10 w-full h-full">
@@ -145,8 +143,6 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
-      </>
-      );
     </>
   );
 }
