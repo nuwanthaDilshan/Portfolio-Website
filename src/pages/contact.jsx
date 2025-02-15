@@ -44,7 +44,7 @@ export default function ContactPage() {
             <div className="w-full bg-[#052e55] relative rounded-2xl overflow-hidden">
               {/* Contact Image */}
               <img
-                src="/contact-us.jpg"
+                src="/contact_us.png"
                 className="absolute w-[150px] h-[150px] md:w-[250px] md:h-[250px] object-cover rounded-2xl left-5 top-5"
                 alt="Contact Us"
               />

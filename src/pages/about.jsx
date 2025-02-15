@@ -9,7 +9,7 @@ export default function AboutPage() {
           {/* Left Side Section */}
           <div className="w-full flex justify-center md:px-10">
             <img
-              src="/about-banner.jpg"
+              src="/about-banner.png"
               alt="About Us Banner"
               className="rounded-3xl w-full max-w-sm md:max-w-md lg:max-w-lg object-cover"
             />
