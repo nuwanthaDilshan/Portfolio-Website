@@ -22,6 +22,7 @@ export default function Home() {
     const interval = setInterval(() => {
       setIsTyping(false);
       setTimeout(() => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         currentIndex = (currentIndex + 1) % texts.length;
         setCurrentText(texts[currentIndex]);
         setIsTyping(true);
