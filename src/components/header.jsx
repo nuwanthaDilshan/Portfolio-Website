@@ -53,7 +53,7 @@ export default function Header() {
         <header>
             <nav
                 className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 font-[Times_New_Roman] ${
-                    isScrolled ? "bg-tertiary shadow-lg" : "bg-transparent"
+                    isScrolled ? "bg-black shadow-lg" : "bg-transparent"
                 }`}
             >
                 <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between relative">
