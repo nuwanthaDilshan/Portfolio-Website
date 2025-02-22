@@ -35,14 +35,14 @@ export default function HomePage() {
       {showButton && (
         <button
           onClick={scrollToBottom}
-          className="fixed bottom-10 right-5 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-black border border-blue-500 hover:border-white hover:scale-110 transition-all duration-75 z-50"
+          className="fixed bottom-10 right-5 bg-accent text-white p-3 rounded-full shadow-lg hover:bg-black  hover:scale-110 transition-all duration-75 z-50"
         >
           <FaArrowUp size={24} />
         </button>
       )}
 
       {/* Home Section */}
-      <div className="w-full bg-[#062139] font-[Times_New_Roman]">
+      <div className="w-full bg-primary font-[Times_New_Roman]">
         <section
           id="home"
           className="min-h-[90vh] flex items-center justify-center py-5"
@@ -53,7 +53,7 @@ export default function HomePage() {
       </div>
 
       {/* About Section */}
-      <div className="w-full bg-[#062139] font-[Times_New_Roman]">
+      <div className="w-full bg-primary font-[Times_New_Roman]">
         <section
           id="about"
           className="min-h-[90vh] flex items-center justify-center py-5"
@@ -63,7 +63,7 @@ export default function HomePage() {
       </div>
 
       {/* Projects Section */}
-      <div className="w-full bg-[#062139] font-[Times_New_Roman]">
+      <div className="w-full bg-primary font-[Times_New_Roman]">
         <section
           id="projects"
           className="min-h-[90vh] flex items-center justify-center py-5"
@@ -73,7 +73,7 @@ export default function HomePage() {
       </div>
 
       {/* Services Section */}
-      <div className="w-full bg-[#062139] font-[Times_New_Roman]">
+      <div className="w-full bg-primary font-[Times_New_Roman]">
         <section
           id="services"
           className="min-h-[90vh] flex items-center justify-center py-5"
@@ -83,7 +83,7 @@ export default function HomePage() {
       </div>
 
       {/* Testimonial Section */}
-      <div className="w-full bg-[#062139] font-[Times_New_Roman]">
+      <div className="w-full bg-primary font-[Times_New_Roman]">
         <section
           id="testimonial"
           className="min-h-[90vh] flex items-center justify-center py-5"
@@ -93,7 +93,7 @@ export default function HomePage() {
       </div>
 
       {/* Contact Section */}
-      <div className="w-full bg-[#062139] font-[Times_New_Roman]">
+      <div className="w-full bg-primary font-[Times_New_Roman]">
         <section
           id="contact"
           className="min-h-[90vh] flex items-center justify-center"

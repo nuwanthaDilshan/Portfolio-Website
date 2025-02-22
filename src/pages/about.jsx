@@ -17,7 +17,7 @@ export default function AboutPage() {
 
           {/* Right Side Section */}
           <div className="space-y-6 text-center md:text-left md:pr-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-500">
+            <h2 className="text-3xl md:text-4xl font-bold text-accent">
               Welcome to Our Journey
             </h2>
             <p className="text-gray-200 text-base md:text-lg leading-relaxed">
@@ -30,7 +30,7 @@ export default function AboutPage() {
               adventure.
             </p>
             <div>
-              <button className="border border-blue-500 bg-blue-500 text-white font-semibold px-6 py-3 rounded-xl hover:bg-black hover:border-white transition-all">
+              <button className=" bg-accent text-white font-semibold px-6 py-3 rounded-xl hover:bg-black  transition-all">
                 Learn More
               </button>
             </div>

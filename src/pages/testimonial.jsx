@@ -22,11 +22,11 @@ export default function TestimonialSection() {
   return (
     <section className="text-white py-16 px-6 md:px-20 text-center relative">
       {/* Header */}
-      <h4 className="bg-[#224564] text-white py-1 px-3 rounded-md inline-block text-sm uppercase mb-4">
+      <h4 className="bg-secondary text-white py-1 px-3 rounded-md inline-block text-sm uppercase mb-4">
         TESTIMONIAL
       </h4>
       <h2 className="text-3xl md:text-4xl font-bold mb-6">
-        OVER <span className="text-[#0788ff]">8,000+</span> PEOPLE TRUST ME
+        OVER <span className="text-accent">8,000+</span> PEOPLE TRUST ME
       </h2>
 
       {/* Testimonial Card */}
@@ -34,7 +34,7 @@ export default function TestimonialSection() {
         <img
           src={testimonials[currentIndex].image}
           alt={testimonials[currentIndex].name}
-          className="w-20 h-20 rounded-full border-4 border-gray-500 shadow-lg mb-4"
+          className="w-20 h-20 rounded-full border-4 border-accent shadow-lg mb-4"
         />
         <p className="text-lg md:text-xl text-gray-300 italic mb-6">
           {testimonials[currentIndex].text}
@@ -50,7 +50,7 @@ export default function TestimonialSection() {
             key={index}
             className={`cursor-pointer text-xs ${
               index === currentIndex
-                ? "text-blue-500 scale-150 duration-700"
+                ? "text-accent scale-150 duration-700"
                 : "text-gray-500"
             }`}
             onClick={() => setCurrentIndex(index)}

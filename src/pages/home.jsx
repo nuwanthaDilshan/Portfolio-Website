@@ -41,13 +41,13 @@ export default function Home() {
           <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-16">
             {/* Left Side Section */}
             <div className="text-center md:text-left p-5">
-              <p className="bg-[#224564] inline-block px-2 rounded-[3px] mb-2">
+              <p className="bg-secondary inline-block px-2 rounded-[3px] mb-2">
                 Your Full Name
               </p>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 uppercase">
                 Hi! I'm First Name.
               </h1>
-              <h1 className="text-[#0788ff] text-3xl md:text-4xl font-bold mb-4 uppercase flex items-center">
+              <h1 className="text-accent text-3xl md:text-4xl font-bold mb-4 uppercase flex items-center">
                 <span className="mr-3">I'm</span>
                 <span
                   className={`inline-block ${
@@ -68,7 +68,7 @@ export default function Home() {
               <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-6">
                 <Link
                   to="/contact"
-                  className="bg-[#0788ff] text-white px-6 py-3 rounded-full hover:bg-black flex items-center gap-2"
+                  className="bg-accent text-white px-6 py-3 rounded-full hover:bg-black flex items-center gap-2"
                   onClick={() => scrollToSection("contact")}
                 >
                   Get in touch

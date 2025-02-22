@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme{
+  --color-primary: #062139;
+  --color-secondary: #052e55;
+  --color-tertiary: #051c32;
+  --color-accent:#0788ff;
+}
+
 /* Hide scrollbar */
 .scrollbar-hide {
     scrollbar-width: none;

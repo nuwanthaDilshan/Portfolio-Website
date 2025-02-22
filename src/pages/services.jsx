@@ -6,11 +6,11 @@ export default function ServicesPage() {
       <MouseBall />
       <section id="services" className="w-full h-full p-10 text-white">
         <div className="p-6 md:p-16">
-          <p className="uppercase bg-[#224564] inline-block px-2 rounded-[3px]">
+          <p className="uppercase bg-secondary inline-block px-2 rounded-[3px]">
             Services
           </p>
           <h1 className="uppercase text-3xl font-bold mt-2">
-            web development <span className="text-[#0788ff]">services</span> I
+            web development <span className="text-accent">services</span> I
             am providing
           </h1>
 

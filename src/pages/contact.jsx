@@ -41,7 +41,7 @@ export default function ContactPage() {
         <MouseBall />
         <section id="contact" className="w-full h-full p-5 md:p-10 text-white">
           <div className="p-6 md:p-10 w-full h-full">
-            <div className="w-full bg-[#052e55] relative rounded-2xl overflow-hidden">
+            <div className="w-full bg-secondary relative rounded-2xl overflow-hidden">
               {/* Contact Image */}
               <img
                 src="/contact_us.png"
@@ -65,7 +65,7 @@ export default function ContactPage() {
               </div>
 
               {/* Responsive Discussion Section */}
-              <div className="w-full bg-[#051c32] grid grid-cols-1 md:grid-cols-3 py-10 px-5 md:px-10 gap-5">
+              <div className="w-full bg-tertiary grid grid-cols-1 md:grid-cols-3 py-10 px-5 md:px-10 gap-5">
                 <div className="hidden md:block"></div>
                 <div className="col-span-2 md:col-span-1 hidden md:block">
                   <h1 className="text-3xl md:text-4xl font-bold mb-3">
@@ -127,7 +127,7 @@ export default function ContactPage() {
                     </div>
                     <button
                       type="submit"
-                      className="uppercase bg-[#0788ff] border border-[#0788ff] text-white px-4 py-3 w-full rounded-full hover:border-white hover:bg-black transition duration-300"
+                      className="uppercase bg-accent  text-white px-4 py-3 w-full rounded-full  hover:bg-black transition duration-300"
                       disabled={loading}
                     >
                       {loading ? "Sending..." : "Send Message"}

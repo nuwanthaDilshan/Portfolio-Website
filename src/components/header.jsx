@@ -53,7 +53,7 @@ export default function Header() {
         <header>
             <nav
                 className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 font-[Times_New_Roman] ${
-                    isScrolled ? "bg-[#040c16] shadow-lg" : "bg-transparent"
+                    isScrolled ? "bg-tertiary shadow-lg" : "bg-transparent"
                 }`}
             >
                 <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between relative">
@@ -85,14 +85,14 @@ export default function Header() {
                     <div
                         className={`${
                             menuOpen ? "block" : "hidden"
-                        } md:flex text-[13px] text-white text-base uppercase gap-4 absolute md:relative right-1 top-14 md:top-auto md:right-auto md:flex-row md:items-center bg-[#040c16] md:bg-transparent w-full md:w-auto`}
+                        } md:flex text-[13px] text-white text-base uppercase gap-4 absolute md:relative right-1 top-14 md:top-auto md:right-auto md:flex-row md:items-center bg-tertiary md:bg-transparent w-full md:w-auto`}
                     >
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
                                 `relative text-white block py-2 px-4 ${
                                     activeSection === "home"
-                                        ? "text-[#0788ff] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-[#0788ff] md:after:transition-all md:after:duration-1000"
+                                        ? "text-accent md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-accent md:after:transition-all md:after:duration-1000"
                                         : "md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-0 md:after:h-[3px] md:after:bg-transparent"
                                 }`
                             }
@@ -106,7 +106,7 @@ export default function Header() {
                             className={({ isActive }) =>
                                 `relative text-white block py-2 px-4 ${
                                     activeSection === "about"
-                                        ? "text-[#0788ff] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-[#0788ff] md:after:transition-all md:after:duration-1000"
+                                        ? "text-accent md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-accent md:after:transition-all md:after:duration-1000"
                                         : "md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-0 md:after:h-[3px] md:after:bg-transparent"
                                 }`
                             }
@@ -120,7 +120,7 @@ export default function Header() {
                             className={({ isActive }) =>
                                 `relative text-white block py-2 px-4 ${
                                     activeSection === "projects"
-                                        ? "text-[#0788ff] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-[#0788ff] md:after:transition-all md:after:duration-1000"
+                                        ? "text-accent md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-accent md:after:transition-all md:after:duration-1000"
                                         : "md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-0 md:after:h-[3px] md:after:bg-transparent"
                                 }`
                             }
@@ -134,7 +134,7 @@ export default function Header() {
                             className={({ isActive }) =>
                                 `relative text-white block py-2 px-4 ${
                                     activeSection === "services"
-                                        ? "text-[#0788ff] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-[#0788ff] md:after:transition-all md:after:duration-1000"
+                                        ? "text-accent md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-accent md:after:transition-all md:after:duration-1000"
                                         : "md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-0 md:after:h-[3px] md:after:bg-transparent"
                                 }`
                             }
@@ -148,7 +148,7 @@ export default function Header() {
                             className={({ isActive }) =>
                                 `relative text-white block py-2 px-4 ${
                                     activeSection === "contact"
-                                        ? "text-[#0788ff] md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-[#0788ff] md:after:transition-all md:after:duration-1000"
+                                        ? "text-accent md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-accent md:after:transition-all md:after:duration-1000"
                                         : "md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-0 md:after:h-[3px] md:after:bg-transparent"
                                 }`
                             }
@@ -159,7 +159,7 @@ export default function Header() {
                         {/* Let's Talk Button */}
                         <Link
                             to="/contact"
-                            className="hidden md:block uppercase bg-[#0788ff] border-1 border-[#0788ff] text-white px-4 py-2 rounded-full hover:border-white hover:bg-black md:ml-[40px]"
+                            className="hidden md:block uppercase bg-accent  text-white px-4 py-2 rounded-full  hover:bg-black md:ml-[40px]"
                             onClick={() => handleNavClick("contact")}
                         >
                             Let's Talk

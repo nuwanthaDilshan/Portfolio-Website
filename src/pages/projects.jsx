@@ -31,9 +31,9 @@ export default function ProjectsPage() {
     <>
       <MouseBall />
       <section id="projects" className="w-full h-full pt-10 text-white">
-        <div className="bg-[#072d4f] w-full h-full px-4">
+        <div className="bg-tertiary w-full h-full px-4">
           <div className="p-6 md:p-16">
-            <p className="uppercase bg-[#224564] inline-block px-2 rounded-[3px]">
+            <p className="uppercase bg-secondary inline-block px-2 rounded-[3px]">
               my work
             </p>
             <h1 className="uppercase text-3xl font-bold mt-2">
@@ -72,7 +72,7 @@ export default function ProjectsPage() {
                     <span className="capitalize opacity-60">
                       Web Design, App Design
                     </span>
-                    <IoMdArrowForward className="absolute right-2 bottom-2 border-2 border-black rounded-full text-4xl bg-blue-500 text-white p-1 hover:bg-black transition-all duration-300 cursor-pointer" />
+                    <IoMdArrowForward className="absolute right-2 bottom-2 border-2 border-black rounded-full text-4xl bg-accent text-white p-1 hover:bg-black transition-all duration-300 cursor-pointer" />
                   </div>
                 </div>
               ))}
