@@ -85,7 +85,7 @@ export default function Header() {
                     <div
                         className={`${
                             menuOpen ? "block" : "hidden"
-                        } md:flex text-[13px] text-white text-base uppercase gap-4 absolute md:relative right-1 top-14 md:top-auto md:right-auto md:flex-row md:items-center bg-tertiary md:bg-transparent w-full md:w-auto`}
+                        } md:flex text-[13px] text-white text-base uppercase gap-4 absolute md:relative right-1 top-14 md:top-auto md:right-auto md:flex-row md:items-center bg-black md:bg-transparent w-full md:w-auto`}
                     >
                         <NavLink
                             to="/"
