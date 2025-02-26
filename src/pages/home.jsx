@@ -42,10 +42,10 @@ export default function Home() {
             {/* Left Side Section */}
             <div className="text-center md:text-left p-5">
               <p className="bg-secondary inline-block px-2 rounded-[3px] mb-2">
-                Your Full Name
+                Subasinghe Mudiyanselage Nuwantha Dilshan Subsinghe
               </p>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 uppercase">
-                Hi! I'm First Name.
+                Hi! I'm Nuwantha.
               </h1>
               <h1 className="text-accent text-3xl md:text-4xl font-bold mb-4 uppercase flex items-center">
                 <span className="mr-3">I'm</span>
@@ -92,11 +92,11 @@ export default function Home() {
             </div>
 
             {/* Right Side Section */}
-            <div className="mt-8 md:mt-0">
+            <div>
               <img
-                src="./home-banner.png"
+                src="./banner.png"
                 alt="Home Banner"
-                className="w-full max-w-lg mx-auto"
+                className="w-full mx-auto p-10 rounded-[100px] object-cover"
               />
             </div>
           </div>
