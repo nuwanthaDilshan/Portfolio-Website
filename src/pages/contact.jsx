@@ -53,13 +53,13 @@ export default function ContactPage() {
                 <div className="mb-6">
                   <p className="opacity-70">E-mail Address</p>
                   <h3 className="font-bold text-xl md:text-2xl">
-                    email@gmail.com
+                    nuwanthadilshan56@gmail.com
                   </h3>
                 </div>
                 <div>
                   <p className="opacity-70">Phone</p>
                   <h3 className="font-bold text-xl md:text-2xl">
-                    +94 111 222 333
+                    +94 74 190 0211
                   </h3>
                 </div>
               </div>
