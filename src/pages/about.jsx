@@ -11,7 +11,7 @@ export default function AboutPage() {
             <img
               src="/about-banner.png"
               alt="About Us Banner"
-              className="rounded-3xl w-full max-w-sm md:max-w-md lg:max-w-lg object-cover"
+              className="rounded-3xl w-full max-w-sm md:max-w-md lg:max-w-lg object-cover h-[80vh]"
             />
           </div>
 
