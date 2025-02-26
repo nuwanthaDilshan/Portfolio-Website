@@ -96,7 +96,7 @@ export default function Home() {
               <img
                 src="./banner.png"
                 alt="Home Banner"
-                className="w-full mx-auto p-10 rounded-[100px] object-cover"
+                className="w-full mx-auto p-10 rounded-[100px] object-contain"
               />
             </div>
           </div>
