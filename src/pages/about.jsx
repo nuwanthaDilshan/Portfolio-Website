@@ -30,9 +30,12 @@ export default function AboutPage() {
               adventure.
             </p>
             <div>
-              <button className=" bg-accent text-white font-semibold px-6 py-3 rounded-xl hover:bg-black  transition-all">
-                Learn More
-              </button>
+              <a
+                href="https://github.com/nuwanthaDilshan"
+                className=" bg-accent text-white font-semibold px-6 py-3 rounded-xl hover:bg-black  transition-all"
+              >
+                Go My GitHub
+              </a>
             </div>
           </div>
         </div>
