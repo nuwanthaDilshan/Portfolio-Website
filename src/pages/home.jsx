@@ -75,18 +75,18 @@ export default function Home() {
                   <IoIosArrowRoundForward className="text-2xl" />
                 </Link>
                 <div className="flex gap-4">
-                  <Link
-                    to="#"
+                  <a
+                    href="https://www.facebook.com/nuwantha.dilshan.05"
                     className="rounded-full border-2 border-white bg-blue-500 p-3 hover:scale-110 transition-transform"
                   >
                     <FaFacebookF className="text-white text-xl" />
-                  </Link>
-                  <Link
-                    to="#"
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/nuwantha-dilshan-subasinghe-6bbb08289/"
                     className="rounded-full border-2 border-white bg-blue-400 p-3 hover:scale-110 transition-transform"
                   >
                     <FaLinkedinIn className="text-white text-xl" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
