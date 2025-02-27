@@ -26,7 +26,6 @@ export default function EducationTimeline() {
   return (
     <>
       <section
-        id="education"
         className="w-full h-full p-6 md:p-10 text-white"
       >
         <div className="p-6 md:p-16">

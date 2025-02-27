@@ -4,7 +4,7 @@ export default function AboutPage() {
   return (
     <>
       <MouseBall />
-      <section id="about" className="w-full h-full py-10">
+      <section className="w-full h-full py-10">
         <div className="container mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-gray-100">
           {/* Left Side Section */}
           <div className="w-full flex justify-center md:px-10">
