@@ -21,13 +21,13 @@ export default function AboutPage() {
               Welcome to Our Journey
             </h2>
             <p className="text-gray-200 text-base md:text-lg leading-relaxed">
-              Discover who we are, what we stand for, and how we are shaping the
-              future with innovative solutions and creative ideas.
+              Explore our identity, values, and the transformative impact we’re
+              making through cutting-edge solutions and imaginative ideas.
             </p>
             <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-              Our commitment to excellence drives us to deliver products and
-              services that make a difference. Join us on this incredible
-              adventure.
+              Our dedication to quality fuels our mission to provide products
+              and services that truly matter. Come along on this exciting
+              journey with us.
             </p>
             <div>
               <a
