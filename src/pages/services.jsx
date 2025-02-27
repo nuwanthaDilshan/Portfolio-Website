@@ -31,7 +31,7 @@ export default function ServicesPage() {
   return (
     <>
       <MouseBall />
-      <section id="services" className="w-full h-full p-10 text-white">
+      <section className="w-full h-full p-10 text-white">
         <div className="p-6 md:p-16">
           <p className="uppercase bg-secondary inline-block px-2 rounded-[3px]">
             Services
