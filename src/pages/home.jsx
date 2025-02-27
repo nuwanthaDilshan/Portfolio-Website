@@ -60,10 +60,10 @@ export default function Home() {
               </h1>
 
               <p className="text-base md:text-lg mb-6">
-                I’m a software engineer and full-stack developer with expertise
-                in web technologies. I build scalable, efficient, and
-                user-friendly web applications, focusing on both front-end and
-                back-end development.
+                I’m a full-stack developer and software engineer specializing in
+                web technologies. I design and develop scalable,
+                high-performance, and intuitive web applications, handling both
+                front-end and back-end development efficiently.
               </p>
               <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-6">
                 <Link
