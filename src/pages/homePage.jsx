@@ -83,14 +83,14 @@ export default function HomePage() {
       </div>
 
       {/* Testimonial Section */}
-      <div className="w-full bg-primary font-[Times_New_Roman]">
+      {/* <div className="w-full bg-primary font-[Times_New_Roman]">
         <section
           id="testimonial"
           className="min-h-[90vh] flex items-center justify-center py-5"
         >
           <TestimonialPage />
         </section>
-      </div>
+      </div> */}
 
       {/* Contact Section */}
       <div className="w-full bg-primary font-[Times_New_Roman]">
