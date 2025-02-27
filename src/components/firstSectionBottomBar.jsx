@@ -108,7 +108,7 @@ export default function FirstSectionBottomBar() {
             ref={scrollContainerRef}
             className="flex gap-10 overflow-x-auto scrollbar-hide cursor-grab"
             style={{
-              width: "1000px", // Show 5 icons at a time
+              width: "1000px",
               overflowX: "auto",
               whiteSpace: "nowrap",
               scrollSnapType: "x mandatory",
