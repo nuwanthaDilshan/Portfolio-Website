@@ -34,9 +34,9 @@ export default function ProjectsPage() {
       link: "#",
     },
     {
-      title: "Project 2",
-      description: "Another project description.",
-      link: "#",
+      title: "Hot Meal Restaurant",
+      description: "Web Design, App Design (HTML, CSS, Bootstrap, PHP).",
+      link: "https://github.com/nuwanthaDilshan/Restaurant-Management-System.git",
     },
     {
       title: "Portfolio Website",

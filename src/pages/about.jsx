@@ -31,7 +31,7 @@ export default function AboutPage() {
             </p>
             <div>
               <a
-                href="https://github.com/nuwanthaDilshan"
+                href="https://github.com/nuwanthaDilshan" target="_blank"
                 className=" bg-accent text-white font-semibold px-6 py-3 rounded-xl hover:bg-black  transition-all"
               >
                 Go My GitHub
