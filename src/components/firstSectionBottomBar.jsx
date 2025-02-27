@@ -22,32 +22,30 @@ export default function FirstSectionBottomBar() {
   const [scrollLeft, setScrollLeft] = useState(0);
 
   const icons = [
-    <FaJs className="text-8xl text-yellow-500" />,
-    <FaReact className="text-8xl text-accent" />,
-    <FaNodeJs className="text-8xl text-green-500" />,
-    <SiExpress className="text-8xl text-gray-500" />,
-    <SiMongodb className="text-8xl text-green-500" />,
-    <FaPython className="text-8xl text-[#ffff00]" />,
-    <SiFlask className="text-8xl text-[#000000]" />,
-    <SiPhp className="text-8xl text-[#7377ad]" />,
-    <FaHtml5 className="text-8xl text-[#e34f26]" />,
-    <RiTailwindCssFill className="text-8xl text-[#38bdf8]" />,
-    <FaCss3Alt className="text-8xl text-[#264de4]" />,
-    <FaLaravel className="text-8xl text-[#ff2d20]" />,
-    <FaBootstrap className="text-8xl text-[#563d7c]" />,
-    <FaGitAlt className="text-8xl text-[#f34f29]" />,
-    <FaGithub className="text-8xl text-[#181717]" />,
-    <IoLogoFigma className="text-8xl text-[#f24e1e]" />,
+    <FaJs className="text-6xl sm:text-7xl md:text-8xl text-yellow-500" />,
+    <FaReact className="text-6xl sm:text-7xl md:text-8xl text-accent" />,
+    <FaNodeJs className="text-6xl sm:text-7xl md:text-8xl text-green-500" />,
+    <SiExpress className="text-6xl sm:text-7xl md:text-8xl text-gray-500" />,
+    <SiMongodb className="text-6xl sm:text-7xl md:text-8xl text-green-500" />,
+    <FaPython className="text-6xl sm:text-7xl md:text-8xl text-[#ffff00]" />,
+    <SiFlask className="text-6xl sm:text-7xl md:text-8xl text-[#000000]" />,
+    <SiPhp className="text-6xl sm:text-7xl md:text-8xl text-[#7377ad]" />,
+    <FaHtml5 className="text-6xl sm:text-7xl md:text-8xl text-[#e34f26]" />,
+    <RiTailwindCssFill className="text-6xl sm:text-7xl md:text-8xl text-[#38bdf8]" />,
+    <FaCss3Alt className="text-6xl sm:text-7xl md:text-8xl text-[#264de4]" />,
+    <FaLaravel className="text-6xl sm:text-7xl md:text-8xl text-[#ff2d20]" />,
+    <FaBootstrap className="text-6xl sm:text-7xl md:text-8xl text-[#563d7c]" />,
+    <FaGitAlt className="text-6xl sm:text-7xl md:text-8xl text-[#f34f29]" />,
+    <FaGithub className="text-6xl sm:text-7xl md:text-8xl text-[#181717]" />,
+    <IoLogoFigma className="text-6xl sm:text-7xl md:text-8xl text-[#f24e1e]" />,
   ];
 
-  // Duplicate icons to enable infinite loop effect
   const duplicatedIcons = [...icons, ...icons];
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
     if (!scrollContainer) return;
 
-    // Set initial scroll position to the middle
     scrollContainer.scrollLeft = scrollContainer.scrollWidth / 4;
 
     const handleScroll = () => {
@@ -65,13 +63,11 @@ export default function FirstSectionBottomBar() {
     return () => scrollContainer.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Auto-scroll effect
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
     if (!scrollContainer) return;
 
-    const scrollSpeed = 1; // Adjust speed as needed
-
+    const scrollSpeed = 1;
     const autoScroll = () => {
       if (scrollContainer && !isDragging) {
         scrollContainer.scrollLeft += scrollSpeed;
@@ -101,31 +97,33 @@ export default function FirstSectionBottomBar() {
   };
 
   return (
-    <>
-      <div className="absolute left-0 bottom-0 w-full h-[150px] bg-tertiary">
-        <div className="w-full h-full flex justify-center items-center">
-          <div
-            ref={scrollContainerRef}
-            className="flex gap-10 overflow-x-auto scrollbar-hide cursor-grab"
-            style={{
-              width: "1000px",
-              overflowX: "auto",
-              whiteSpace: "nowrap",
-              scrollSnapType: "x mandatory",
-            }}
-            onMouseDown={handleMouseDown}
-            onMouseMove={handleMouseMove}
-            onMouseUp={handleMouseUpOrLeave}
-            onMouseLeave={handleMouseUpOrLeave}
-          >
-            {duplicatedIcons.map((icon, index) => (
-              <div key={index} className="w-[100px] flex-shrink-0">
-                {icon}
-              </div>
-            ))}
-          </div>
+    <div className="absolute left-0 bottom-0 w-full h-[120px] md:h-[150px] bg-tertiary">
+      <div className="w-full h-full flex justify-center items-center">
+        <div
+          ref={scrollContainerRef}
+          className="flex gap-6 sm:gap-8 md:gap-10 overflow-x-auto scrollbar-hide cursor-grab"
+          style={{
+            width: "90vw",
+            maxWidth: "1000px",
+            overflowX: "auto",
+            whiteSpace: "nowrap",
+            scrollSnapType: "x mandatory",
+          }}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUpOrLeave}
+          onMouseLeave={handleMouseUpOrLeave}
+        >
+          {duplicatedIcons.map((icon, index) => (
+            <div
+              key={index}
+              className="w-[80px] sm:w-[90px] md:w-[100px] flex-shrink-0"
+            >
+              {icon}
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
