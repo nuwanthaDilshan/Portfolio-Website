@@ -27,6 +27,36 @@ export default function ProjectsPage() {
     setIsDragging(false);
   };
 
+  const details = [
+    {
+      title: "Project 1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      link: "#",
+    },
+    {
+      title: "Project 2",
+      description: "Another project description.",
+      link: "#",
+    },
+    {
+      title: "Portfolio Website",
+      description: "Web Design, App Design (ReactJS with Tailwind CSS).",
+      link: "https://nuwantha-dilshan.vercel.app/",
+    },
+
+    {
+      title: "AgroBot",
+      description:
+        "AI ChatBot using Python and Natural Language Processing (NLP) for Tea Cultivation",
+      link: "https://github.com/nuwanthaDilshan/AgroBot.git",
+    },
+    {
+      title: "Hospital Management System",
+      description: "Web Design, App Design (HTML, CSS, JavaScript, PHP, Hack).",
+      link: "https://github.com/nuwanthaDilshan/HospitalWebSite.git",
+    },
+  ];
+
   return (
     <>
       <MouseBall />
@@ -49,7 +79,7 @@ export default function ProjectsPage() {
               onMouseUp={handleMouseUpOrLeave}
               onMouseLeave={handleMouseUpOrLeave}
             >
-              {[1, 2, 3, 4, 5].map((project) => (
+              {[1, 2, 3, 4, 5].map((project, index) => (
                 <div
                   key={project}
                   className="w-[300px] sm:w-[350px] flex-shrink-0 bg-white rounded-[7px] p-4 relative cursor-default group overflow-hidden select-none"
@@ -58,7 +88,7 @@ export default function ProjectsPage() {
                   <div className="relative overflow-hidden rounded-[7px] group-hover:rounded-[7px] transition-all duration-500 cursor-pointer">
                     <img
                       src={`/project${project}.jpg`}
-                      alt=""
+                      alt={`Project ${project}`}
                       className="w-full h-[200px] object-cover transition-transform duration-500 transform group-hover:scale-110 group-hover:blur-sm"
                     />
                     {/* Plus Icon on Hover */}
@@ -68,11 +98,15 @@ export default function ProjectsPage() {
                   </div>
 
                   <div className="mt-4 text-black relative">
-                    <h1 className="text-2xl capitalize">Website Design</h1>
-                    <span className="capitalize opacity-60">
-                      Web Design, App Design
+                    <h1 className="text-2xl capitalize line-clamp-1">
+                      {details[index]?.title || `Project ${project}`}
+                    </h1>
+                    <span className="capitalize opacity-60 line-clamp-2">
+                      {details[index]?.description || "Description"}
                     </span>
-                    <IoMdArrowForward className="absolute right-2 bottom-2 border-2 border-black rounded-full text-4xl bg-accent text-white p-1 hover:bg-black transition-all duration-300 cursor-pointer" />
+                    <a href={details[index]?.link} target="_blank">
+                      <IoMdArrowForward className="absolute right-2 bottom-2 border-2 border-black rounded-full text-4xl bg-accent text-white p-1 hover:bg-black transition-all duration-300 cursor-pointer" />
+                    </a>
                   </div>
                 </div>
               ))}
