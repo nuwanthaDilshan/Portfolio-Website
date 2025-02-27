@@ -29,8 +29,8 @@ export default function ProjectsPage() {
 
   const details = [
     {
-      title: "Project 1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      title: "BusyBee Sound Rent",
+      description: "The project is still in development.",
       link: "#",
     },
     {
