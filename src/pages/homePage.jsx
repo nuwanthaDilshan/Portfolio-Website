@@ -8,6 +8,7 @@ import Home from "./home";
 import ProjectsPage from "./projects";
 import ServicesPage from "./services";
 import TestimonialPage from "./education";
+import EducationTimeline from "./education";
 
 export default function HomePage() {
   const upRef = useRef(null);
@@ -61,6 +62,15 @@ export default function HomePage() {
           <AboutPage />
         </section>
       </div>
+      {/* Education Section */}
+      <div className="w-full bg-primary font-[Times_New_Roman]">
+        <section
+          id="education"
+          className="min-h-[90vh] flex items-center justify-center py-5"
+        >
+          <EducationTimeline />
+        </section>
+      </div>
 
       {/* Projects Section */}
       <div className="w-full bg-primary font-[Times_New_Roman]">
@@ -79,16 +89,6 @@ export default function HomePage() {
           className="min-h-[90vh] flex items-center justify-center py-5"
         >
           <ServicesPage />
-        </section>
-      </div>
-
-      {/* Testimonial Section */}
-      <div className="w-full bg-primary font-[Times_New_Roman]">
-        <section
-          id="testimonial"
-          className="min-h-[90vh] flex items-center justify-center py-5"
-        >
-          <TestimonialPage />
         </section>
       </div>
 
