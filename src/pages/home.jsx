@@ -60,7 +60,7 @@ export default function Home() {
               </h1>
 
               <p className="text-base md:text-lg mb-6">
-                I'm a full-stack developer and software engineer specializing in
+                I’m a full-stack developer and software engineer specializing in
                 web technologies. I design and develop scalable,
                 high-performance, and intuitive web applications, handling both
                 front-end and back-end development efficiently.
