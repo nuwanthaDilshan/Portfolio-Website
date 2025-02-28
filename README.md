@@ -1,6 +1,6 @@
 # 👦🏻 My Portfolio Website
 
-![Portfolio Website](![image](https://github.com/user-attachments/assets/c60749bb-406a-4f3f-9b54-5ac732d87119)
+![Portfolio Website](public/readmeBanner.png)
 )
 
 A sleek, modern, and fully responsive Portfolio Website built with React.js and styled with Tailwind CSS. Designed to showcase my skills, projects, and experience in an engaging and interactive way.
