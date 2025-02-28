@@ -1,6 +1,7 @@
 # 👦🏻 My Portfolio Website
 
-![Portfolio Website]([https://nuwantha-dilshan.vercel.app/](https://photos.fife.usercontent.google.com/pw/AP1GczMLwNuRbAE8Ji4Yq0f3qlnZC6mNcM2LQ3tieOQBfcdAnz7w5-I9Wm27=w461-h220-no?authuser=0))
+![Portfolio Website](![image](https://github.com/user-attachments/assets/c60749bb-406a-4f3f-9b54-5ac732d87119)
+)
 
 A sleek, modern, and fully responsive Portfolio Website built with React.js and styled with Tailwind CSS. Designed to showcase my skills, projects, and experience in an engaging and interactive way.
 
