@@ -37,7 +37,7 @@ export default function Home() {
       <MouseBall />
       <div className="relative w-full text-gray-100">
         {/* Home Section */}
-        <section id="home" className="w-full flex-grow relative">
+        <section className="w-full flex-grow relative">
           <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-16">
             {/* Left Side Section */}
             <div className="text-center md:text-left p-5">

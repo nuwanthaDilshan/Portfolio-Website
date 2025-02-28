@@ -18,6 +18,7 @@ export default function Header() {
                 "projects",
                 "services",
                 "contact",
+                "education",
             ];
             for (const section of sections) {
                 const element = document.getElementById(section);
@@ -113,6 +114,19 @@ export default function Header() {
                             onClick={() => handleNavClick("about")}
                         >
                             About Me
+                        </NavLink>
+                        <NavLink
+                            to="/aducation"
+                            className={({ isActive }) =>
+                                `relative text-white block py-2 px-4 ${
+                                    activeSection === "education"
+                                        ? "text-accent md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-full md:after:h-[3px] md:after:bg-accent md:after:transition-all md:after:duration-1000"
+                                        : "md:after:absolute md:after:left-0 md:after:bottom-0 md:after:w-0 md:after:h-[3px] md:after:bg-transparent"
+                                }`
+                            }
+                            onClick={() => handleNavClick("education")}
+                        >
+                            Education
                         </NavLink>
 
                         <NavLink

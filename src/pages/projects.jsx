@@ -60,7 +60,7 @@ export default function ProjectsPage() {
   return (
     <>
       <MouseBall />
-      <section id="projects" className="w-full h-full pt-10 text-white">
+      <section className="w-full h-full pt-10 text-white">
         <div className="bg-tertiary w-full h-full px-4">
           <div className="p-6 md:p-16">
             <p className="uppercase bg-secondary inline-block px-2 rounded-[3px]">

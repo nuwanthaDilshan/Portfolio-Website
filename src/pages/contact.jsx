@@ -39,7 +39,7 @@ export default function ContactPage() {
   return (
     <>
       <MouseBall />
-      <section id="contact" className="w-full h-full p-5 md:p-10 text-white">
+      <section  className="w-full h-full p-5 md:p-10 text-white">
         <div className="p-6 md:p-10 w-full h-full">
           <div className="w-full bg-secondary relative rounded-2xl overflow-hidden">
             {/* Contact Image */}
