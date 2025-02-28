@@ -41,7 +41,7 @@ export default function ProjectsPage() {
     {
       title: "Portfolio Website",
       description: "Web Design, App Design (ReactJS with Tailwind CSS).",
-      link: "https://nuwantha-dilshan.vercel.app/",
+      link: "https://github.com/nuwanthaDilshan/portfolio-website.git",
     },
 
     {
